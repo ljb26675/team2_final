@@ -1,5 +1,7 @@
 # CSCI 4530/6530 Final Project
 
+
+
 ## TEAM MEMBERS
 Linsey Briley    UG
 <br>
@@ -8,6 +10,8 @@ Nazish Tahir     G
 Javier Rodriguez G
 <br>
 
+## Husky github
+https://github.com/husky/husky
 
 ## TO RUN THIS PACKAGE
 
