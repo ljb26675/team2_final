@@ -20,6 +20,7 @@ $ export HUSKY_GAZEBO_DESCRIPTION=$(rospack find husky_gazebo)/urdf/description.
 $ export GAZEBO_MODEL_PATH=$(rospack find team2_final)/worlds
 
   Create launch file to make world and bot → final.launch
+<br>
 $ roslaunch team2_final final.launch
 
   launch rviz to see lazer/kinect data and rviz
@@ -29,12 +30,15 @@ $ roslaunch husky_viz view_robot.launch
 ## NEEDS TO BE UPDATED TO INCLUDE SERVICE, ETC
 
   launch gmapping/hector slam/amctl
+<br>
 $
 
   launch A-star
+<br>
 $
 
   launch computer vision
+<br>
 $
 
 
