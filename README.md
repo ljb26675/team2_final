@@ -11,7 +11,7 @@ Javier Rodriguez G
 
 ## TO RUN THIS PACKAGE
 
-Make sure to catkin_make in catkin_ws dir to build package before inital use.
+Make sure to ```catkin_make``` in *catkin_ws* dir to build package before inital use.
 ```
 $ roscore
 
