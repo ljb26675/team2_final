@@ -1,8 +1,8 @@
-## CSCI 4530/6530
-## Final Project
+# CSCI 4530/6530
+# Final Project
 
 
-# TO RUN THIS PACKAGE
+## TO RUN THIS PACKAGE
 
 Make sure to catkin_make in catkin_ws dir to build package before inital use.
 
@@ -19,7 +19,7 @@ $ roslaunch team2_final final.launch
 $ roslaunch husky_viz view_robot.launch
 
 
-# ---------   NEEDS TO BE UPDATED TO INCLUDE SERVICE, ETC ---------
+## ---------   NEEDS TO BE UPDATED TO INCLUDE SERVICE, ETC ---------
 
   launch gmapping/hector slam/amctl
 $
@@ -32,4 +32,4 @@ $
 
 
 
-# --------- NEED TO ADD VIDEO ----------------------------------
+## --------- NEED TO ADD VIDEO ----------------------------------
