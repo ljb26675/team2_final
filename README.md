@@ -24,6 +24,7 @@ $ export GAZEBO_MODEL_PATH=$(rospack find team2_final)/worlds
 $ roslaunch team2_final final.launch
 
   launch rviz to see lazer/kinect data and rviz
+<br>
 $ roslaunch husky_viz view_robot.launch
 
 
