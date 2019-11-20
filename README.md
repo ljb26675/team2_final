@@ -1,5 +1,9 @@
-# CSCI 4530/6530
-# Final Project
+# CSCI 4530/6530 Final Project
+
+## TEAM MEMBERS
+Linsey Briley    UG
+Nazish Tahir     G
+Javier Rodriguez G
 
 
 ## TO RUN THIS PACKAGE
@@ -19,7 +23,7 @@ $ roslaunch team2_final final.launch
 $ roslaunch husky_viz view_robot.launch
 
 
-## ---------   NEEDS TO BE UPDATED TO INCLUDE SERVICE, ETC ---------
+## NEEDS TO BE UPDATED TO INCLUDE SERVICE, ETC
 
   launch gmapping/hector slam/amctl
 $
@@ -32,4 +36,4 @@ $
 
 
 
-## --------- NEED TO ADD VIDEO ----------------------------------
+## NEED TO ADD VIDEO
