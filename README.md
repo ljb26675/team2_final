@@ -2,8 +2,11 @@
 
 ## TEAM MEMBERS
 Linsey Briley    UG
+<br>
 Nazish Tahir     G
+<br>
 Javier Rodriguez G
+<br>
 
 
 ## TO RUN THIS PACKAGE
