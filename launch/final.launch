@@ -23,4 +23,10 @@
   <!--- Bring up rviz -->
   <include file="$(find team2_final)/launch/view_robot.launch" />
 
+  <!--- Run gmapping -->
+  <include file="$(find husky_navigation)/launch/gmapping.launch" />
+
+  <!--- Run Move Base -->
+  <include file="$(find husky_navigation)/launch/move_base.launch" />
+
 </launch>

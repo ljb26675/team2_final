@@ -24,7 +24,7 @@ $ export HUSKY_GAZEBO_DESCRIPTION=$(rospack find husky_gazebo)/urdf/description.
 $ export GAZEBO_MODEL_PATH=$(rospack find team2_final)/worlds
 ```
 
-  Create launch file to make world and bot and rviz
+  Create launch file to make world and bot and rviz, and run the gmapping and move_base
 <br>
 ```
 $ roslaunch team2_final final.launch
@@ -47,6 +47,13 @@ Save the map to disk
 $ rosrun map_server map_saver -f <your map name>
 ```
 
+## Run the move_base_goal.py file to move for now
+<br>
+```
+$ rosrun team2_final move_base_goal.py
+```
+
+
 ## NEEDS TO BE UPDATED TO INCLUDE SERVICE, ETC
 
   launch gmapping/hector slam/amctl
@@ -66,6 +73,14 @@ $
 $
 ```
 
+## Outside materials used
+https://hotblackrobotics.github.io/en/blog/2018/01/29/action-client-py/
+<br>
+http://wiki.ros.org/navigation/Tutorials/SendingSimpleGoals
+<br>
+https://husarion.com/tutorials/ros-tutorials/7-path-planning/
+<br>
+https://husarion.com/tutorials/ros-tutorials/6-slam-navigation/#navigation-and-map-building
 
 
 ## NEED TO ADD VIDEO
