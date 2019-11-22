@@ -20,5 +20,7 @@
     <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
   </include>
 
+  <!--- Bring up rviz -->
+  <include file="$(find team2_final)/launch/view_robot.launch" />
 
 </launch>

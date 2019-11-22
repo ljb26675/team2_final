@@ -24,17 +24,13 @@ $ export HUSKY_GAZEBO_DESCRIPTION=$(rospack find husky_gazebo)/urdf/description.
 $ export GAZEBO_MODEL_PATH=$(rospack find team2_final)/worlds
 ```
 
-  Create launch file to make world and bot → final.launch
+  Create launch file to make world and bot and rviz
 <br>
 ```
 $ roslaunch team2_final final.launch
 ```
 
-  launch rviz to see lazer/kinect data and rviz
-<br>
-```
-$ roslaunch husky_viz view_robot.launch
-```
+## This makes the map
 launch gmapping launch file from husky_navigation package 
 <br>
 ```
