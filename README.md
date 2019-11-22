@@ -47,7 +47,8 @@ Save the map to disk
 $ rosrun map_server map_saver -f <your map name>
 ```
 
-## Run the move_base_goal.py file to move for now
+## Navigation Manager starter code
+  Run this to move the robot to some goal defined in the python file.
 <br>
 ```
 $ rosrun team2_final move_base_goal.py
