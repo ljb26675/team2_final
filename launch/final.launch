@@ -1,5 +1,8 @@
 <launch>
 
+  <env name="GAZEBO_MODEL_PATH" value="$(find team2_final)/worlds"/>
+  <env name="HUSKY_GAZEBO_DESCRIPTION" value="$(find husky_gazebo)/urdf/description.gazebo.xacro"/>
+  
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find team2_final)/worlds/Boydworld.world"/>
     <arg name="paused" value="false"/>
