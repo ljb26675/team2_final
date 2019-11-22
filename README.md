@@ -35,7 +35,21 @@ $ roslaunch team2_final final.launch
 ```
 $ roslaunch husky_viz view_robot.launch
 ```
-
+launch gmapping launch file from husky_navigation package 
+<br>
+```
+$ roslaunch husky_navigation gmapping.launch
+```
+navigate husky around the world until you get satisfied with your map 
+<br> 
+```
+$  rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
+Save the map to disk
+<br>
+```
+$ rosrun map_server map_saver -f <your map name>
+```
 
 ## NEEDS TO BE UPDATED TO INCLUDE SERVICE, ETC
 
