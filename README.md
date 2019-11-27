@@ -71,7 +71,7 @@ $
   launch computer vision
 <br>
 ```
-$
+$ rosrun team2_final image_analysis.py
 ```
 
 ## Outside materials used
