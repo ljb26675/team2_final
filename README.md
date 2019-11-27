@@ -82,9 +82,14 @@ http://wiki.ros.org/navigation/Tutorials/SendingSimpleGoals
 https://husarion.com/tutorials/ros-tutorials/7-path-planning/
 <br>
 https://husarion.com/tutorials/ros-tutorials/6-slam-navigation/#navigation-and-map-building
+<br>
 http://wiki.ros.org/ROS/Tutorials/DefiningCustomMessages
+<br>
 http://wiki.ros.org/opencv3
+<br>
 http://wiki.ros.org/cv_bridge/Tutorials/ConvertingBetweenROSImagesAndOpenCVImagesPython
+<br>
+https://docs.opencv.org/
 
 
 ## NEED TO ADD VIDEO
