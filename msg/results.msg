@@ -1,0 +1,4 @@
+bool symboldetected
+uint8 symbolcolor
+float32 symbolpositionx
+float32 symbolpositiony
