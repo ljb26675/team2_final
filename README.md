@@ -13,6 +13,7 @@ Javier Rodriguez G
 ## Husky github
 https://github.com/husky/husky
 
+
 ## TO RUN THIS PACKAGE
 
 Make sure to ```catkin_make``` in *catkin_ws* dir to build package before inital use.
@@ -57,17 +58,12 @@ $ rosrun team2_final move_base_goal.py
 
 ## NEEDS TO BE UPDATED TO INCLUDE SERVICE, ETC
 
-  launch gmapping/hector slam/amctl
+  launch gmapping/hector slam/amctl with A-star
 <br>
 ```
-$
+$ roslaunch husky_navigation gmapping_astar_dwa.launch
 ```
 
-  launch A-star
-<br>
-```
-$
-```
   launch computer vision
 <br>
 ```
@@ -90,6 +86,8 @@ http://wiki.ros.org/opencv3
 http://wiki.ros.org/cv_bridge/Tutorials/ConvertingBetweenROSImagesAndOpenCVImagesPython
 <br>
 https://docs.opencv.org/
+<br> 
+https://github.com/idincern/idincern-husky/tree/master/husky_navigation
 
 
 ## NEED TO ADD VIDEO
