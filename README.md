@@ -93,8 +93,8 @@ https://docs.opencv.org/
 https://github.com/idincern/idincern-husky/tree/master/husky_navigation
 
 
-## Video and screenshot of rviz after robot returns to 0,0
+## Video and screenshot of rviz after robot returns to 0,0 under the video/ directory
 
-These are called FinalVideo.mp4 and rviz.png
+These are called video/FinalVideo.mp4 and video/rviz.png
 
 ## What we did
