@@ -16,59 +16,62 @@ https://github.com/husky/husky
 
 ## TO RUN THIS PACKAGE
 
-Make sure to ```catkin_make``` in *catkin_ws* dir to build package before inital use.
 ```
 $ roscore
 
-$ export HUSKY_GAZEBO_DESCRIPTION=$(rospack find husky_gazebo)/urdf/description.gazebo.xacro
-
-$ export GAZEBO_MODEL_PATH=$(rospack find team2_final)/worlds
 ```
 
-  Create launch file to make world and bot and rviz, and run the gmapping and move_base
+  Create launch file to make world and bot and rviz, and run the gmapping and move_base.
+  This also exports the path to the models and the husky_gazebo_description.
+  Also provides teleop for testing.
 <br>
 ```
 $ roslaunch team2_final final.launch
 ```
 
-## This makes the map
-launch gmapping launch file from husky_navigation package 
+  Run the wpserver.py file
 <br>
 ```
-$ roslaunch husky_navigation gmapping.launch
+$ rosrun team2_final wpserver.py
 ```
-navigate husky around the world until you get satisfied with your map 
-<br> 
-```
-$  rosrun teleop_twist_keyboard teleop_twist_keyboard.py
-```
-Save the map to disk
+
+  Run our image_analysis.py file, and to see it echo the /analysis topic
 <br>
 ```
-$ rosrun map_server map_saver -f <your map name>
+$ rosrun team2_final image_analysis.py
+
+$ rostopic echo /analysis
 ```
 
-## Navigation Manager starter code
-  Run this to move the robot to some goal defined in the python file.
+  Run our ServiceManager.py file, and to see it echo the /service topic, but it also prints what its 
+  seeing from /analysis. It won't publish until it sees a star.
 <br>
 ```
-$ rosrun team2_final move_base_goal.py
+$ rosrun team2_final ServiceManager.py
+
+$ rostopic echo /service
 ```
 
+  Run our move_base_around.py file, which should move the robot around with astar
+<br>
+```
+$ rosrun team2_final move_base_around.py
 
-## NEEDS TO BE UPDATED TO INCLUDE SERVICE, ETC
+```
 
-  launch gmapping/hector slam/amctl with A-star
+  To launch astar:
 <br>
 ```
 $ roslaunch husky_navigation gmapping_astar_dwa.launch
 ```
 
-  launch computer vision
+  To save a version of our map, move around with the teleop keys, while clicked into 
+  the terminal we launched with our launch file, then save the map to disk
 <br>
 ```
-$ rosrun team2_final image_analysis.py
+$ rosrun map_server map_saver -f <your map name>
 ```
+
 
 ## Outside materials used
 https://hotblackrobotics.github.io/en/blog/2018/01/29/action-client-py/
@@ -90,4 +93,8 @@ https://docs.opencv.org/
 https://github.com/idincern/idincern-husky/tree/master/husky_navigation
 
 
-## NEED TO ADD VIDEO
+## Video and screenshot of rviz after robot returns to 0,0
+
+These are called FinalVideo.mp4 and rviz.png
+
+## What we did

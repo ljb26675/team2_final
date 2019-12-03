@@ -20,6 +20,7 @@
     <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
   </include>
 
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen"/>
   <!--- Bring up rviz -->
   <include file="$(find team2_final)/launch/view_robot.launch" />
 
