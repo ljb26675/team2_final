@@ -101,7 +101,7 @@ These are called video/FinalVideo.mp4 and video/rviz.png
 
 **Javier** (Image analysis script) -> Image channels segmentation, find contours, select the biggest area and calculate centroid using Hu moments. Then analyze color of this particular pixel, and publish results to the /analysis topic. This script also calculates distance from the robot to the wall using the depth camera.
 
-**Nazish** : Used Gmapping for slam instead of Hector Slam or AMCL. We had some issues running hector slam and we thought AMCL would need the map file which was really off on Rviz. We ended up using gmapping as it worked. 
+**Nazish** : (Gmapping and Path Planning) Used Gmapping for slam instead of Hector Slam or AMCL. We had some issues running hector slam and we thought AMCL would need the map file which was really off on Rviz. We ended up using gmapping as it worked. 
 Chose A-star (DWA) over Djikstra for path planning as it appears to run better than dijkstra. But on implementation, it wasn't implementing correctly and we were getting "failed to get a path" error. It could be due to the issues in the world file that we discussed in class. 
 
 **Linsey** (Service Manager) -> This service manager subscribes to the /analysis topic and publishes to the /service topic. It uses the color detected from the /analysis topic and keeps track of the last x,y waypoints and if it is the initial call to the service. Once it detects a color, it publishes to the /service topic, with the Point(x,y,z) value of the next waypoint.
