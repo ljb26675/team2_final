@@ -99,4 +99,4 @@ These are called video/FinalVideo.mp4 and video/rviz.png
 
 ## What we did
 
-Javier (Image analysis script) -> Image channels segmentation, find contours, select the biggest area and calculate centroid using Hu moments. Then analyze color of this particular pixel, and publish results to the /analysis topic. This script also calculate distance from the robot to the waal using the depth camera.
+Javier (Image analysis script) -> Image channels segmentation, find contours, select the biggest area and calculate centroid using Hu moments. Then analyze color of this particular pixel, and publish results to the /analysis topic. This script also calculates distance from the robot to the wall using the depth camera.
