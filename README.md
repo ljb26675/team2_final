@@ -52,17 +52,17 @@ $ rosrun team2_final ServiceManager.py
 $ rostopic echo /service
 ```
 
+  To launch astar:
+<br>
+```
+$ roslaunch husky_navigation gmapping_astar_dwa.launch
+```
+
   Run our move_base_around.py file, which should move the robot around with astar
 <br>
 ```
 $ rosrun team2_final move_base_around.py
 
-```
-
-  To launch astar:
-<br>
-```
-$ roslaunch husky_navigation gmapping_astar_dwa.launch
 ```
 
   To save a version of our map, move around with the teleop keys, while clicked into 
