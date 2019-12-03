@@ -103,3 +103,5 @@ Javier (Image analysis script) -> Image channels segmentation, find contours, se
 
 Nazish : Used Gmapping for slam instead of Hector Slam or AMCL. We had some issues running hector slam and we thought AMCL would need the map file which was really off on Rviz. We ended up using gmapping as it worked. 
 Chose A-star (DWA) over Djikstra for path planning as it appears to run better than dijkstra. But on implementation, it wasn't implementing correctly and we were getting "failed to get a path" error. It could be due to the issues in the world file that we discussed in class. 
+
+All -> General coordination of the project, scripts merging, debugging, and testing, and trying to find solutions to the problems during execution. 
